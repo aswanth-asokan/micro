@@ -10,6 +10,7 @@ phases:
     commands:
       - echo Build started on `date`
       - cd ./auth && npm install
+      - cd ./gateway && npm install
   post_build:
     commands:
       - echo build completed
