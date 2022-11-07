@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo cp -rf /var/www/micro-service/common/ /var/www/micro-service/auth/
+cd /var/www/micro-service
+cp -rf common/ /var/www/micro-service/auth/
