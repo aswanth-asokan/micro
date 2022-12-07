@@ -1,0 +1,23 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+  pre_build:
+    commands:
+      - echo installing
+  build:
+    commands:
+      - echo Build started on `date`
+      - cd ./auth
+      - npm install
+  post_build:
+    commands:
+      - echo build completed
+artifacts:
+  files:
+    - appspec.yml
+    - scripts/
+    - auth/
+    - index.js
+    - node_modules/**/*
