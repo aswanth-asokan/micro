@@ -8,6 +8,7 @@ phases:
       - echo installing
   build:
     commands:
+      - cp -rf common/ ./auth/
       - echo Build started on `date`
       - cd ./auth
       - npm install
